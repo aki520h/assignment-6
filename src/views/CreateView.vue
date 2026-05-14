@@ -95,7 +95,7 @@ const fetchAdventures = async () => {
 };
 
 
-
+const router = useRouter();
 
 // POST API
 const handleCreate = async () => {
