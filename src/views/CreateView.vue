@@ -106,7 +106,7 @@ const handleCreate = async () => {
       'https://assigment-6-be-2.onrender.com/adventures',
       newItem.value
     );
-
+    router.push('/');
     alert('Adventure Added Successfully');
 
     // Refresh Data
@@ -124,7 +124,7 @@ const handleCreate = async () => {
       tags: ['New']
 
     };
-    await router.push('/');
+    router.push('/');
 
   } catch (error) {
 
