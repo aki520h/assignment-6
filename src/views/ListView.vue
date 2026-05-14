@@ -192,7 +192,6 @@ const items = ref<Adventure[]>([]);
 const loading = ref(false);
 
 
-const API_URL = import.meta.env.VITE_API_URL;
 
 // GET API
 const fetchAdventures = async () => {
@@ -202,7 +201,7 @@ const fetchAdventures = async () => {
   try {
 
     const response = await axios.get(
-      `${API_URL}/adventures`
+      `https://assigment-6-be-2.onrender.com/adventures`
     );
 
     items.value = response.data.data;
@@ -238,7 +237,7 @@ const handleDelete = async (id: string) => {
   try {
 
     await axios.delete(
-      `${API_URL}/adventures/${id}`
+      `https://assigment-6-be-2.onrender.com/adventures/${id}`
     );
 
 

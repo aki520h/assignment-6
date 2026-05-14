@@ -79,7 +79,7 @@ const fetchAdventures = async () => {
   try {
 
     const response = await axios.get(
-      'http://localhost:8000/api/adventures'
+      'https://assigment-6-be-2.onrender.com/api/adventures'
     );
 
     adventures.value = response.data.data;
@@ -103,7 +103,7 @@ const handleCreate = async () => {
   try {
 
     await axios.post(
-      '${API_URL}/adventures',
+      'https://assigment-6-be-2.onrender.com/adventures',
       newItem.value
     );
 

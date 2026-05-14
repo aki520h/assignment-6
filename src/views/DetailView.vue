@@ -121,10 +121,6 @@ import axios from 'axios';
 
 
 
-// API URL
-const API_URL = import.meta.env.VITE_API_URL;
-
-
 
 
 // Router
@@ -173,7 +169,7 @@ const fetchAdventure = async () => {
   try {
 
     const response = await axios.get(
-      `${API_URL}/adventures`
+      `https://assigment-6-be-2.onrender.com/adventures`
     );
 
 
@@ -215,7 +211,7 @@ const handleUpdate = async () => {
 
     await axios.put(
 
-      `${API_URL}/adventures/${item.value?._id}`,
+      `https://assigment-6-be-2.onrender.com/adventures/${item.value?._id}`,
 
       item.value
 
